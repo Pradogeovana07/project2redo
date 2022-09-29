@@ -1,0 +1,286 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --pink: rgb(255 105 180);
+    --shadow: 0 20px 30px rgba(104, 104, 104, 3);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ccc;
+    line-height: 1.4;
+    box-sizing: border-box;
+}
+
+span {
+    color: var(--pink)
+}
+
+header {
+    background-color: #d7d1d1;
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+    position: sticky;
+    top: 0;
+    box-shadow: 20px 20px 50px 10px rgb(175, 134, 141) inset;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
+    background-color: var(--dark);
+    box-shadow: 0 6px 10px rgba(104, 104, 104, 0.8);
+}
+
+nav a {
+    text-decoration: none;
+    margin: auto;
+    color: var(--light)
+}
+
+nav a:hover {
+    color: var(--pink);
+}
+
+.aboutme-parent {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    border-bottom: 5px solid var(--pink);
+}
+
+.aboutme-child1 {
+    margin-bottom: 1px;
+}
+
+.aboutme-child1 img {
+    width: 90%;
+    height: 90%;
+    margin-top: 20px;
+    box-shadow: var(--shadow);
+}
+
+.aboutme-child2 {
+    height: 450px;
+    width: 75%;
+    align-items: center;
+}
+
+.aboutme-child2 h2 {
+
+    text-align: center;
+    color: var(--dark);
+    margin-top: 110px;
+}
+
+.aboutme-child2 p {
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 10px;
+    color: var(--dark);
+    overflow: hidden;
+}
+
+.mywork-container {
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+}
+
+.myworkparent {
+    display: table-column;
+    height: 748px;
+    width: 476px;
+    margin-top: 60px;
+    border-right: 6px solid var(--dark);
+}
+
+.myworkparent h2 {
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    margin-top: 250px;
+}
+
+.right-mywork-parent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+}
+
+.right-mywork-child1-top {
+    height: 45%;
+    width: 900px;
+    margin-top: 60px;
+    margin-left: 350px;
+    margin-right: 80px;
+    background-image: url(Javascript.jpg);
+    background-size: cover;
+    box-shadow: var(--shadow);
+}
+
+.right-mywork-child1-top h2 {
+    width: 250px;
+    font-size: 40px;
+    text-align: center;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.right-mywork-parent a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.right-mywork-parent a:hover {
+    color: var(--pink);
+}
+
+.right-mywork-child2-bottom {
+    display: flex;
+
+
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 350px;
+    width: 900px;
+    height: 85%;
+
+}
+
+.right-mywork-child2-bottom-left {
+    height: 100%;
+    width: 45%;
+    background-image: url(css.jpg);
+    background-size: cover;
+    box-shadow: var(--shadow);
+}
+
+.right-mywork-child2-bottom-right {
+    height: 100%;
+    width: 45%;
+    background-image: url(html.jpg);
+    background-size: cover;
+    box-shadow: var(--shadow);
+}
+
+.footer-parent {
+    display: flex;
+    flex-direction: row;
+    border-top: 5px solid hotpink;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.footer-parent-left {
+    border-right: 6px solid var(--dark);
+    height: 180px;
+    width: 400px;
+    margin-top: 60px;
+
+}
+
+.footer-parent-left h2 {
+    text-align: center;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.footer-parent-right {
+    height: 300px;
+    width: 900px;
+    margin-left: 300px;
+}
+
+.footer-child-top {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    word-spacing: 200px;
+}
+
+.footer-child-top i {
+    color: hotpink;
+    padding-top: 100px;
+    ;
+}
+
+.footer-child-bottom {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-child-bottom h3 {
+    height: 25%;
+    margin: 32px;
+    color: var(--dark);
+}
+
+.footer-child-bottom a {
+    text-decoration-color: var(--pink);
+}
+
+#github a {
+    color: var(--dark);
+}
+
+#github a:hover {
+    color: var(--pink);
+}
+
+#email a {
+    color: var(--dark)
+}
+
+#email a:hover {
+    color: var(--pink)
+}
+@media screen and (max-width: 480px) {
+    .text {
+      font-size: 16px;
+    }
+}
+@media screen and (max-width: 480px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        height:150px;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 480px) {
+    .aboutme-parent {
+        display: flex;
+        flex-direction: column;
+        height:300px;
+    }
+}
