@@ -29,11 +29,11 @@ span {
 }
 
 .header-container {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     background-color: #d7d1d1;
     font-size: 25px;
-    height: 130px;
+    height: 250px;
     position: sticky;
     top: 0;
     box-shadow: 20px 20px 50px 10px rgb(175, 134, 141) inset;
@@ -41,17 +41,17 @@ span {
 }
 h1 {
     height: 200px;
+    padding-top: 60px;
+    width: 100%;
     text-align: center;
-    padding-top:40px;
     font-size: 60px;
 }
 
 nav {
-    height: 60px;
+    height: 70px;
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin: auto;
     align-items: center;
     justify-content: space-around;
     background-color: var(--dark);
@@ -78,10 +78,8 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-   
     margin-bottom: 30px;
-    padding-top: 60px;
-    
+    padding-top: 45px;
 }
 
 .aboutme {
@@ -89,6 +87,7 @@ h2 {
     min-height:400px;
     box-shadow: var(--shadow);
 }
+
 .profilepic {
     min-height: 300px;
     width: 300px;
@@ -166,6 +165,7 @@ h2 {
 .footer-container {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     margin-top: 60px;
     /* background-color: aqua; */
     height: 200px;
@@ -175,10 +175,8 @@ h2 {
 
 .flexfooter {
     color: var(--dark);
-   
-    width:400px;
     display: flex;
-    align-items:center;
+    flex-direction: row;
     justify-content: center;
     margin:auto;
 
@@ -189,7 +187,7 @@ h2 {
     font-size: 30px;
     color: var(--light);
     background-color: #333;
-    width: 400px;
+    
 }
 
 .flexfooter a{
@@ -202,39 +200,55 @@ h2 {
 }
 /* ----media ---- */
 
-/* @media screen and (max-width:480px){ */
-/*    
-    nav {
-        height: 300px;
-        
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        align-items: center;
-        justify-content: space-evenly;
-        background-color: var(--dark);
-        box-shadow: 0 6px 10px rgba(104, 104, 104, 0.8);
-    } */
-    /* .aboutme-container  {
-        height: 500px;
-        display: flex; 
-        flex-wrap: nowrap;
-        flex-direction: column;
-        min-height: 400px; */
+ @media screen and (max-width:768px){ 
+    
+        .h1 {
+            height: auto;
+            font-size: small;
+            padding-top: 0;
+        }
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            height:auto;
+            position: static;
+        }
+    
+         /* nav {
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-around; 
+            
+         } */
+         nav {
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+         }
+        .nav a:hover {
+            display: block;
+        }
+         .nav a {
+            display: none;
+            position: absolute;
+         }
+    } 
+ 
 
+ @media screen and (min-width:768px) and (max-width:1023) { 
+    
+   
+    } 
+ 
 
-        /* margin: auto;
-        align-items: center;
-        justify-content: space-evenly;
-        background-color: var(--dark);
-        box-shadow: 0 6px 10px rgba(104, 104, 104, 0.8);
-    } */
-
-
-
-
-
-
+ @media screen and (min-width:768px) and (max-width:1023) { 
+ 
+   
+    } 
+ 
 
 
 
