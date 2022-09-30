@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    /* border: 2px solid red; */
+    box-sizing: border-box;
 }
 
 :root {
@@ -28,22 +28,23 @@ span {
     color: var(--pink)
 }
 
-.container {
+.header-container {
     display: flex;
     flex-direction: column;
     background-color: #d7d1d1;
     font-size: 25px;
     height: 130px;
-    padding-top: 40px;
+    padding: 40px;
     position: sticky;
     top: 0;
     box-shadow: 20px 20px 50px 10px rgb(175, 134, 141) inset;
-
+    
 }
 h1 {
-    display: flex;
-    margin: auto;
-    align-items: center;
+    height: 200px;
+    text-align: center;
+    padding-top:50px;
+    font-size: 60px;
 }
 
 nav {
@@ -67,233 +68,141 @@ nav a:hover {
     color: var(--pink);
 }
 
-.aboutme-parent {
-    height: 400px;
-    width: 100%;
+h2 {
     display: flex;
-    flex-direction: row;
-    
-    
-    border-bottom: 5px solid var(--pink);
+    justify-content: center;
+    font-size: 35px;
+}
+/*---"about me section--- */
+.aboutme-container {
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    background-color: pink;
+    margin-bottom: 30px;
+    overflow:visible;
 }
 
-.aboutme-child1 {
-    display: flex;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    width:25%;
-    height: 100%;
-}
-.aboutme-child1 img {
-    width: 80%;
-    height: 90%;
-    margin-right: 35px;
+.aboutme {
+    margin-top:30px;
+    min-height:400px;
     box-shadow: var(--shadow);
 }
-
-
-.aboutme-child2 {
-    height: 100%;
-    width: 75%;
-    
+.profilepic {
+    min-height: 300px;
+    width: 300px;
+    background-image: url(profilepic.png);
+    background-size: cover;
+    background-color: #333;
 }
 
-.aboutme-child2 h2 {
-    height: 25%;
-    display: flex;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    color: var(--dark);
-    
+.bio {
+    min-height: 300px;
+    width: 600px;
+    background-color:lightgreen; 
 }
-
-.aboutme-child2 p {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    margin:auto;
-    align-items: center;
-    color: var(--dark);
-    text-indent:100px;
+.bio h2 {
+    margin-top: 50px;
+   
 }
 /* ---work container--- */
 .mywork-container {
-    height: 800px;
-    display: flex;
-    flex-direction: row;
+   height: 450px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: flex-start;
+   background-color: lightgreen;
+
 }
 
-.leftworkcontainer {
-    display: flex;
-    margin:auto;
-    align-items: center;
-    justify-content: center;
-    height: 80%;
-    width: 25%;
-   
-    border-right: 6px solid var(--dark);
-}
-
-.right-mywork-parent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 75%;
-    height: 100%;
-    
-}
-
-.right-mywork-child1-top {
-    height: 50%;
-    width: 70%;
-    background-image: url(Javascript.jpg);
-    background-size: cover;
+.flexitem {
+    margin: 10px;
     box-shadow: var(--shadow);
 }
 
-.right-mywork-child1-top h2 {
+.flexitem h2 {
     width: 250px;
     font-size: 40px;
     text-align: center;
     background-color: var(--light);
-    color: var(--dark);
 }
 
-.right-mywork-parent a {
+.flexitem a {
     color: var(--dark);
     text-decoration: none;
 }
 
-.right-mywork-parent a:hover {
+.flexitem a:hover {
     color: var(--pink);
 }
 
-.right-mywork-child2-bottom {
-    height:50%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between ;
-    border: 3px solid rgb(13, 170, 50);
-}
-
-.right-mywork-child1-bottom-left {
-    height: 100%;
-    width: 45%;
+.css {
+    width:800px;
+    min-height: 400px;
+    flex-shrink: 1; 
     background-image: url(css.jpg);
-    background-size: cover; 
-    box-shadow: var(--shadow);
-    border: 3px solid rgb(162, 42, 164);
+    background-size: cover;
 }
 
-.right-mywork-child2-bottom-right {
-    height: 100%;
-    width: 45%;
+.javascript {
+    width: 400px;
+    min-height: 200px;
+    flex-grow: 1; 
+    background-image: url(Javascript.jpg);
+    background-size: cover;
+}
+
+.html {
+    width: 400px;
+    min-height: 200px;
+    flex-grow: 1; 
     background-image: url(html.jpg);
     background-size: cover;
-    box-shadow: var(--shadow);
-    border: 3px solid blue;
 }
-
-.footer-parent {
+/* -----footer--------- */
+.footer-container {
     display: flex;
     flex-direction: row;
-    border-top: 5px solid hotpink;
-    height: 300px;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    background-color: aqua;
+    justify-content: space-around;
+    overflow: hidden;
+    height: 200px;
 }
 
-.footer-parent-left {
-    border-right: 6px solid var(--dark);
-    width: 25%;
+.flexfooter {
+    color: var(--dark);
+    min-height: 200px;
+    width:400px;
     display: flex;
     align-items:center;
+    justify-content: center;
     margin: auto;
- 
-
-}
-.footer-parent-left h2{
-    border:2px solid blue;
-   display: flex;
-   margin: auto;
-}
-
-
-.footer-parent-right {
-    padding-top: 110px;
-    width: 75%;
-  
-}
-
-.footer-child-top {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    
     
 }
 
-.footer-child-top i {
-    color: hotpink;
-
-    
-    
-}
-/* phone number-- email-- github */
-.footer-child-bottom {
-    display: flex;
-    justify-content: space-around;
-    width: 70%;
-    margin-left: 245px;
-    
-
+.flexfooter h2 {
+    font-size: 30px;
+    color: var(--light);
+    background-color: #333;
+    width: 400px;
 }
 
-.footer-child-bottom h3 {
-     color: var(--dark);
-}
-
-.footer-child-bottom a {
-    text-decoration-color: var(--pink);
-}
-
-#phone {
-    border:2px solid blac
-}
-#github a {
+.flexfooter a{
     color: var(--dark);
+    text-decoration: none;
 }
 
-#github a:hover {
-    color: var(--pink);
-}
-
-#email a {
-    color: var(--dark);
-}
-
-#email a:hover {
+.flexfooter a:hover {
     color: var(--pink)
 }
+/* ----media ---- */
 
-
-/* --------------------------------------- */
-@media only screen and (max-width: 480px) {
-     .container {
-        display: flex;
-        flex-direction: column;
-        height: 145px;
-        min-width: 480px;
-        position: static;
-    } 
-    h1 {
-        display: flex;
-        margin: auto;
-        align-items: center;
-    }
-    
+@media screen and (max-width:480px){
+   
     nav {
         height: 300px;
         
@@ -305,182 +214,13 @@ nav a:hover {
         background-color: var(--dark);
         box-shadow: 0 6px 10px rgba(104, 104, 104, 0.8);
     }
-    
-    
-    .aboutme-parent {
-        height: 600px;
-        display: flex;
-        flex-direction: row;
-        flex-flow: row wrap;
-        border-bottom: 5px solid var(--pink);
-        min-width:fit-content;
-        max-width: fit-content;
-    }
-    
-    .aboutme-child1 {
-        display: flex;
-        margin-top:50px;
-        min-width:480px;
-        height: 500px;
-    }
-    .aboutme-child1 img {
-        height: auto;
-        margin-left: 35px;
-        box-shadow: var(--shadow);
-    }
-    
-    .aboutme-child2 {
-        height: 100%;
-        min-width: 480px;
-    }
-    
-    .aboutme-child2 h2 {
-    height: 15%;
-    }
-    
-    .aboutme-child2 p {
-       font-size: 20px;
-    }
-    /* -----NEED HELP HERE------- */
-    .mywork-parent{
-        height: 15%;
-        display: flex;
-        flex-direction: column;
-        min-width:480px;
-        
-        
-    }
-    .leftworkcontainer{
-        height: 15%;
-        display: flex;
-        flex-direction: column;
-        min-width:480px;
-        border-right: none;
-        border-bottom:  6px solid var(--dark);
-    }
-    .right-mywork-parent {
-        display: row;
-        flex-direction: row wrap;
-        min-width:480px;
-    }
-    .right-mywork-child1-top {
-        min-width: 480px;
-       
-    }
-    /* ------------------ */
-    .footer-parent {
-        height: 15%;
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .footer-parent-left{
-        height: 15%;
-        display: flex;
-        flex-direction: column;
-        min-width:480px;
-        border-bottom: 6px solid var(--dark);
-        border-right: none;
-    }
-    .footer-parent-right {
-        height:15%;
-        display: flex;
-        flex-direction: column;
-        
-    }
-    i {
-        margin-top:0;
-        padding-top: 0;
-    }
 }
 
 
-    /* nav {
-        display: flex;
-        flex-direction: column;
-        height:150px;
-        overflow: hidden;
-    }
-}
-
-   
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        height:300px;
-    }
-
-    img {
-       height: 100px;
-       width:100%; 
-       margin-left:30px;
-    }
-
-    .mywork-container {
-       display: flex;
-       flex-direction: column;
-       height: 100px;
-       width:100%; 
-       margin-left:30px;
-    }
-
-    ..leftworkcontainer {
-       display: flex;
-       flex-direction: column;
-       height: 100%;
-       width:100%; 
-       
-    }
 
 
- @media only screen and (max-width: 780px) {
-    .text {
-      font-size: 16px;
-    }
-}
-@media screen and (max-width: 780px) {
-    nav {
-        display: flex;
-        flex-direction: column;
-        height:150px;
-        overflow: hidden;
-        background-color:blue;
-    }
-}
 
 
-@media only screen and (max-width: 780px){
-    .container {
-        display: flex;
-        flex-direction: column;
-        height:300px;
-        background-color:rgb(33, 190, 72);
-    }
-}
-@media only screen and (max-width: 780px){
-    img {
-       height: 100px;
-       width:100%; 
-       margin-left:38px;
-    }
-}
-@media only screen and (max-width: 780px){
-    .mywork-container {
-       display: flex;
-       flex-direction: column;
-       height: 100px;
-       width:100%; 
-       
-       background-color:rgb(218, 121, 218);
-    }
-}
-@media only screen and (max-width: 780px){
-    ..leftworkcontainer {
-       display: flex;
-       flex-direction: column;
-       height: 100%;
-       width:100%; 
-       
-    }
-}  */
+
+
+
