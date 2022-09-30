@@ -200,17 +200,16 @@ h2 {
 }
 /* ----media ---- */
 
- @media screen and (max-width:768px){ 
+ @media screen and (max-width:468px){ 
     
-        .h1 {
-            height: auto;
-            font-size: small;
-            padding-top: 0;
+        h1 {
+            font-size: 50px;
+            padding-top: 10px;
         }
         .header-container {
             display: flex;
             flex-direction: column;
-            height:auto;
+            height:350px;
             position: static;
         }
     
@@ -224,9 +223,12 @@ h2 {
             
          } */
          nav {
-            height: 300px;
+            height: 200px;
             display: flex;
             flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-around;
          }
         .nav a:hover {
             display: block;
@@ -235,6 +237,10 @@ h2 {
             display: none;
             position: absolute;
          }
+         .profilepic {
+            margin-top: 10px;;
+         }
+         
     } 
  
 
