@@ -29,16 +29,14 @@ span {
 }
 
 .header-container {
-    /* display: flex;
-    flex-direction: column; */
     background-color: #d7d1d1;
     font-size: 25px;
     height: 250px;
     position: sticky;
     top: 0;
     box-shadow: 20px 20px 50px 10px rgb(175, 134, 141) inset;
-    
 }
+
 h1 {
     height: 200px;
     padding-top: 60px;
@@ -103,8 +101,8 @@ h2 {
 }
 .bio h2 {
     margin-top: 50px;
-   
 }
+
 /* ---work container--- */
 .mywork-container {
    padding: 20px;
@@ -113,8 +111,6 @@ h2 {
    justify-content: center;
    align-content: flex-start; 
    background-color: lightgreen;
-   
-
 }
 
 .flexitem {
@@ -161,6 +157,7 @@ h2 {
     background-image: url(html.jpg);
     background-size: cover;
 }
+
 /* -----footer--------- */
 .footer-container {
     display: flex;
@@ -169,8 +166,6 @@ h2 {
     margin-top: 60px;
     /* background-color: aqua; */
     height: 200px;
-    
-    
 }
 
 .flexfooter {
@@ -179,15 +174,12 @@ h2 {
     flex-direction: row;
     justify-content: center;
     margin:auto;
-
-    
 }
 
 .flexfooter h2 {
     font-size: 30px;
     color: var(--light);
     background-color: #333;
-    
 }
 
 .flexfooter a{
@@ -198,62 +190,56 @@ h2 {
 .flexfooter a:hover {
     color: var(--pink)
 }
+
 /* ----media ---- */
-
- @media screen and (max-width:468px){ 
-    
-        h1 {
-            font-size: 50px;
-            padding-top: 10px;
+@media screen and (max-width:468px){ 
+    h1 {
+        font-size: 50px;
+        padding-top: 10px;
         }
-        .header-container {
-            display: flex;
-            flex-direction: column;
-            height:350px;
-            position: static;
+    .header-container {
+         display: flex;
+         flex-direction: column;
+         height:350px;
+         position: static;
         }
     
-         /* nav {
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            align-items: center;
-            justify-content: space-around; 
-            
-         } */
-         nav {
-            height: 200px;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            align-items: center;
-            justify-content: space-around;
+        
+     nav {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around;
          }
-        .nav a:hover {
-            display: block;
+
+    .nav a:hover {
+        display: block;
         }
-         .nav a {
-            display: none;
-            position: absolute;
+
+    .nav a {
+        display: none;
+        position: absolute;
          }
-         .profilepic {
-            margin-top: 10px;;
+    .profilepic {
+         margin-top: 10px;;
          }
-         
     } 
+ 
+@media screen and (min-width:646px) and (max-width:1023) { 
+    nav {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around; 
+    } 
+   } 
  
 
- @media screen and (min-width:768px) and (max-width:1023) { 
-    
-   
-    } 
  
-
- @media screen and (min-width:768px) and (max-width:1023) { 
- 
-   
-    } 
  
 
 
