@@ -18,3 +18,4 @@ WHEN I am presented with the developer's first application
 THEN that application's image should be larger in size than the others
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
+![Project 2 done](https://user-images.githubusercontent.com/113002223/193208237-4ad34af5-21ec-46be-ad4e-b35ae3ad8021.png)
