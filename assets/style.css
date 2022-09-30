@@ -34,7 +34,6 @@ span {
     background-color: #d7d1d1;
     font-size: 25px;
     height: 130px;
-    padding: 40px;
     position: sticky;
     top: 0;
     box-shadow: 20px 20px 50px 10px rgb(175, 134, 141) inset;
@@ -43,7 +42,7 @@ span {
 h1 {
     height: 200px;
     text-align: center;
-    padding-top:50px;
+    padding-top:40px;
     font-size: 60px;
 }
 
@@ -75,14 +74,14 @@ h2 {
 }
 /*---"about me section--- */
 .aboutme-container {
-    height: 350px;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: flex-start;
-    background-color: pink;
+   
     margin-bottom: 30px;
-    overflow:visible;
+    padding-top: 60px;
+    
 }
 
 .aboutme {
@@ -109,12 +108,13 @@ h2 {
 }
 /* ---work container--- */
 .mywork-container {
-   height: 450px;
+   padding: 20px;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   align-content: flex-start;
+   align-content: flex-start; 
    background-color: lightgreen;
+   
 
 }
 
@@ -165,22 +165,23 @@ h2 {
 /* -----footer--------- */
 .footer-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: aqua;
-    justify-content: space-around;
-    overflow: hidden;
+    flex-direction: column;
+    margin-top: 60px;
+    /* background-color: aqua; */
     height: 200px;
+    
+    
 }
 
 .flexfooter {
     color: var(--dark);
-    min-height: 200px;
+   
     width:400px;
     display: flex;
     align-items:center;
     justify-content: center;
-    margin: auto;
+    margin:auto;
+
     
 }
 
@@ -201,8 +202,8 @@ h2 {
 }
 /* ----media ---- */
 
-@media screen and (max-width:480px){
-   
+/* @media screen and (max-width:480px){ */
+/*    
     nav {
         height: 300px;
         
@@ -213,8 +214,22 @@ h2 {
         justify-content: space-evenly;
         background-color: var(--dark);
         box-shadow: 0 6px 10px rgba(104, 104, 104, 0.8);
-    }
-}
+    } */
+    /* .aboutme-container  {
+        height: 500px;
+        display: flex; 
+        flex-wrap: nowrap;
+        flex-direction: column;
+        min-height: 400px; */
+
+
+        /* margin: auto;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: var(--dark);
+        box-shadow: 0 6px 10px rgba(104, 104, 104, 0.8);
+    } */
+
 
 
 
