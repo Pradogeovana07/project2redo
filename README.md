@@ -1,4 +1,4 @@
-# project2redo
+# Professional Portfolio 2
 Advanced CSS Challenge: Professional Portfolio. Building a web page from scratch.
 
 ## User Story
